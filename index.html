@@ -1,0 +1,48 @@
+<script src="calendar.js"></script>
+<script src="SelectFilter.js"></script>
+<script src="filter.js"></script>
+
+<table id="tab_mi_filtro" width="100%" style="display:;">
+    <tr>
+        <td valign="top">
+               <table id="tab_mi_filtro_aux"></table>
+        </td>
+        <td align="right" valign="top" width="50%">
+           <fieldset id='mi_filtro_agregar'>
+                <legend><strong>Opciones de Filtro:</strong></legend>
+                <table width="100%">
+                    <tr>
+                        <td>Seleccione Campo(s)</td>
+                        <td>
+                            <select id="id_select_campos"
+                                    name="select_campos"
+                                    class=comboBox
+                                    onchange="filtro(this);">
+                                <option value="0">Seleccione...</option>
+                                <option value="CAMPO_SIMPLE_1" type="input">CAMPO_SIMPLE_1</option>
+                                <option value="CAMPO_SIMPLE_2" type="input">CAMPO_SIMPLE_2</option>
+                                <option value="CAMPO_SIMPLE_POR_RANGO_1" type="inputRange">CAMPO SIMPLE POR RANGO 1</option>
+                                <option value="CAMPO_SIMPLE_POR_RANGO_2" type="inputRange">CAMPO SIMPLE POR RANGO 1</option>
+                                <option value="FECHA1_POR_RANGO" type="inputDate">FECHA1 POR RANGO</option>
+                                <option value="FECHA2_POR_RANGO" type="inputDate">FECHA2 POR RANGO</option>
+                                <option value="MULTI_SELECCION_1" type="selectMulti"
+                                      arr='[["1","AAA"],
+                                      ["2","BBB"],
+                                      ["3","CCC"]]'>MULTI SELECCION 1</option>
+                                <option value="MULTI_SELECCION_2" type="selectMulti"
+                                      arr='[["1","DDDD"],
+                                      ["2","EEE"],
+                                      ["3","FFF"]]'>MULTI SELECCION 2</option>
+                                <option value="SELECCION_CAMPO_SIMPLE_1" type="inputSelectMulti">SELECCION CAMPO SIMPLE 1</option>
+                                <option value="SELECCION_CAMPO_SIMPLE_2" type="inputSelectMulti">SELECCION CAMPO SIMPLE 2</option>
+                            </select>
+                        </td>
+                    </tr>
+            </table>
+            </fieldset>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+
+
